@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../Card'
+import ContactForm from './ContactForm'
 
 const ContactSection = () => {
   return (
@@ -32,6 +33,8 @@ const ContactSection = () => {
           <h1 className='text-3xl font-bold'>Want to work with us?</h1>
           <p className='text-gray-500 text-center text-lg'>Complete this form and we will get back to you in 24 hours.</p>
         </div>
+
+        <ContactForm/>
       </div>
     </section>
   )

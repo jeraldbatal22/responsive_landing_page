@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <section className='bg-gray-100 pt-20 '>
+    <section className='bg-gray-100 pt-15 '>
       <div className='max-w-7xl mx-auto flex flex-col sm:flex-col lg:flex-row items-center sm:items-center gap-5'>
         <div className='flex-1 flex flex-col gap-5 items-center'>
           <h1 className='text-3xl font-bold'>Material Tailwind</h1>
@@ -32,7 +32,7 @@ const Footer = () => {
       </div>
       <div className='max-w-7xl mx-auto mt-10 flex flex-col gap-5'>
         <div className=' border-b-2 w-full'></div>
-        <div className='text-center text-sm text-gray-500 font-bold'>
+        <div className='text-center text-sm text-gray-500 font-bold pb-4'>
           <a href='##'>Copyright © 2022 Material Tailwind by Creative Tim.</a>
         </div>
       </div>
