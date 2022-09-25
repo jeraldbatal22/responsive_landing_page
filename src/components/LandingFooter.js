@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = () => {
+const LandingFooter = () => {
   return (
     <section className='bg-gray-100 pt-15 '>
       <div className='max-w-7xl mx-auto flex flex-col sm:flex-col lg:flex-row items-center sm:items-center gap-5'>
@@ -40,4 +40,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default LandingFooter

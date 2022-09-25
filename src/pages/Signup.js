@@ -5,7 +5,7 @@ import Checkbox from '../components/InputForm/Checkbox'
 import Input from '../components/InputForm/Input'
 import Layout from '../components/Layout'
 
-const Signin = () => {
+const Signup = () => {
   const [isRememberMe, setIsRememberMe] = useState(false)
   return (
     <Layout>
@@ -13,9 +13,15 @@ const Signin = () => {
         <div className='bg-login-background w-full h-full flex items-center justify-center bg-no-repeat bg-cover bg-center'>
           <div className='flex flex-col gap-5 bg-white rounded-lg w-96'>
             <div className='text-white text-2xl bg-blue-500 w-11/12 m-auto -mt-10 rounded-lg flex justify-center shadow-2xl'>
-              <h1 className='px-5 py-7 font-bold'>Login</h1>
+              <h1 className='px-5 py-7 font-bold'>Register</h1>
             </div>
             <div className='flex flex-col gap-5 p-10 rounded-lg'>
+              <Input
+                icon={<i className="fa-solid fa-user text-gray-400 text-lg"></i>}
+                type="text"
+                placeholder="Full Name"
+              />
+
               <Input
                 icon={<i className="fa-solid fa-envelope text-gray-400 text-lg"></i>}
                 type="email"
@@ -27,8 +33,7 @@ const Signin = () => {
                 type="password"
                 placeholder="Password"
               />
-              <Checkbox title="Remember Me" isDisabled={isRememberMe} onChange={() => setIsRememberMe(!isRememberMe)}/>
-              <Button title="GET STARTED" className="mt-5 py-3 px-6 rounded-md hover:bg-blue-100"/>
+              <Button title="REGISTER" className="py-3 px-6 rounded-md hover:bg-blue-100"/>
             </div>
           </div>
           <HomeFooter/>
@@ -38,4 +43,4 @@ const Signin = () => {
   )
 }
 
-export default Signin
+export default Signup

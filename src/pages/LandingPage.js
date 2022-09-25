@@ -4,6 +4,7 @@ import HeaderContent from '../components/HeaderContent'
 import WorkingSection from '../components/landing_page/WorkingSection'
 import Layout from '../components/Layout'
 import ContactSection from '../components/landing_page/ContactSection'
+import LandingFooter from '../components/LandingFooter'
 
 const LandingPage = () => {
   return (
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <WorkingSection/>
       <TeamSection/>
       <ContactSection/>
+      <LandingFooter/>
     </Layout>
   )
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Button from './InputForm/Button'
 
 const Navbar = () => {
   const [isShowNav, setIsShowNav] = useState(false)
@@ -18,7 +19,10 @@ console.log(isShowNav)
           <li className={`${isShowNav ? 'px-6 py-6' : 'p-2'} flex gap-3 items-center cursor-pointer`}><li className='fab fa-github text-xl'></li>TEMPLATES</li>
           <li className={`${isShowNav ? 'px-6 py-6' : 'p-2'} flex gap-3 items-center cursor-pointer`}><li className='fab fa-github text-xl'></li>GITHUB</li>
           <li className={`${isShowNav ? 'px-6 py-6' : 'p-2'} flex items-center cursor-pointer`}>ISSUES</li>
-          <li className={`${isShowNav ? 'px-6 py-6' : 'p-2'} flex items-center cursor-pointer w-52`}><button className='bg-white text-black py-2 px-4 rounded-md'>FREE DOWNLOAD</button></li>
+          <li className={`${isShowNav ? 'px-6 py-6' : 'p-2'} flex items-center cursor-pointer w-52`}>
+            <Button title="FREE DOWNLOAD" className="py-2 px-4 bg-white text-black rounded-lg"/>
+            {/* <button className='bg-white text-black py-2 px-4 rounded-md'>FREE DOWNLOAD</button> */}
+          </li>
         </ul>
       </nav>
     </div>
