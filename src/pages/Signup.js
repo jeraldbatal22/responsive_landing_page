@@ -1,12 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import HomeFooter from '../components/HomeFooter'
 import Button from '../components/InputForm/Button'
-import Checkbox from '../components/InputForm/Checkbox'
 import Input from '../components/InputForm/Input'
 import Layout from '../components/Layout'
 
 const Signup = () => {
-  const [isRememberMe, setIsRememberMe] = useState(false)
   return (
     <Layout>
       <div className='h-screen'>
